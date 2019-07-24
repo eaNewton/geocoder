@@ -1,0 +1,16 @@
+### .env
+/.env
+
+### Node Modules
+/node_modules
+
+### Specific Address Data
+/data
+/data/addresses_test.js
+/data/addresses-bartell.js
+/data/addresses.js
+/addresses.json
+
+### Geocache.db
+/geocache.db
+
