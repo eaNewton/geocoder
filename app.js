@@ -1,9 +1,9 @@
 require('dotenv').config({path: __dirname + '/.env'});
 
 const GeoBatch = require('geobatch');
-const addresses = require('./data/addresses_test.js').addresses;
+const addresses = require('./data/addresses_wholefoods.js').addresses;
 
-geobatch = new GeoBatch({
+geoBatch = new GeoBatch({
   apiKey: process.env.API_KEY,
 });
 
