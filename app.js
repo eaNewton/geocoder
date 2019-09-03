@@ -9,16 +9,13 @@ geoBatch = new GeoBatch({
 
 function extractFromAddress(components, type) {
   if (!components) {
-    console.log("No components found.");
-    return;
+    console.log(type, 'not found.');
+    return '';
   }
 
-  return components.filter(
-    (component) => component.type.indexOf(type) === 0
-  ).map(
-    (item) => item.long_name
-  ).pop() || null
+  return components.filter((component) => component.types.indexOf(type) === 0).map((item) => item.long_name).pop() || null;
 }
+
 
 geoBatch.geocode(addresses)
   .on('data', function(data) {
